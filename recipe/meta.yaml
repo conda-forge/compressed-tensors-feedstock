@@ -1,5 +1,5 @@
 {% set name = "compressed-tensors" %}
-{% set version = "0.9.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,9 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/compressed-tensors-{{ version }}.tar.gz
-  sha256: 80f8b002309b5970493e578d58542a308111fbef26f96811fa2c5322b24e7f1f
+  sha256: c8d04c0e6768c8286b0e8c38d63a7b89ae34d4b03f5de77cbe4f6f58222d4390
+  patches:
+    - 0001-Inline-get_release_and_version-definition-240.patch
 
 build:
   noarch: python
