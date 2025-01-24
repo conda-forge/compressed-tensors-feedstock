@@ -1,5 +1,5 @@
 {% set name = "compressed-tensors" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/compressed-tensors-{{ version }}.tar.gz
-  sha256: 80f8b002309b5970493e578d58542a308111fbef26f96811fa2c5322b24e7f1f
+  sha256: 3cf5cd637f0186c184dd5bbbbf941356b1225199b49c6a45bf0909d65907f686
 
 build:
   noarch: python
