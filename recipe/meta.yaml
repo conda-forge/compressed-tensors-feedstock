@@ -1,5 +1,5 @@
 {% set name = "compressed-tensors" %}
-{% set version = "0.9.3" %}
+{% set version = "0.9.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5bdc7774a6c217496cba7d6a4fca6ffac943e68adae0481ead6d036660c1b340
+  sha256: 34779417ffa31a207adb0cc4fd2a86cb75e239e504fb2068e494092f4b5703b7
 
 build:
   noarch: python
@@ -18,6 +18,8 @@ requirements:
   host:
     - python {{ python_min }}
     - setuptools
+    - wheel
+    - setuptools-scm >8
     - pip
   run:
     - python >={{ python_min }}
