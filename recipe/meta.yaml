@@ -26,6 +26,7 @@ requirements:
     - pytorch >=1.7.0
     - transformers
     - pydantic >=2.0
+    - frozendict
 
 test:
   imports:
