@@ -24,7 +24,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - pytorch >=1.7.0
-    - transformers
+    - transformers <5
     - pydantic >=2.0
     - loguru
     - psutil
