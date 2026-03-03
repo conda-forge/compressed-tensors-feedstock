@@ -27,6 +27,7 @@ requirements:
     - transformers
     - pydantic >=2.0
     - loguru
+    - psutil
 test:
   imports:
     - compressed_tensors
