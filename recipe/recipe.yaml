@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: compressed-tensors
-  version: "0.19.0"
+  version: "0.20.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: c66f72f121df8970722f708bc2ca719dc1c869004d4fbf6294403b2de1049749
+  sha256: b37676b4c5756e52026ebf08570a5c8d467ecc00dff997f8c256f0da523ac8f4
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
