@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: compressed-tensors
-  version: "0.20.0"
+  version: "0.20.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: b37676b4c5756e52026ebf08570a5c8d467ecc00dff997f8c256f0da523ac8f4
+  sha256: d06d475945d27cb1959a53dd9e3005e0d29237897c56ce3335bb220f9f2fa8ae
 
 build:
   number: 0
